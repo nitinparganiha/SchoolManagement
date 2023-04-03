@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+background-image: url("Contact.jpg");
+background-repeat: no-repeat;
+}
+#contact{
+background-image: url("Contact.jpg");
+text-align: center;
+font-family:monospace;
+padding-top: 60px;
+}
+.input{
+   width: 400px;
+   border-radius:20px;
+   height: 40px;
+}
+#sms{
+   width: 400px;
+   border-radius:10px;
+   height: 180px;
+}
+#submit{
+   width: 300px;
+   border-radius:20px;
+   height: 40px;
+   background-color: rgb(110, 190, 219);
+}
+#lname{
+margin-right: 280px;
+font-weight: bolder;
+font-size: 20px;
+}
+#lemail{
+margin-right: 280px;
+font-weight: bolder;
+font-size: 20px;
+}
+#lmono{
+margin-right: 220px;
+font-weight: bolder;
+font-size: 20px;
+}
+#message{
+margin-right: 280px;
+font-weight: bolder;
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div id="contact">
+<form action="">
+<label id="lname">Name :</label><br>
+<input type="text" name="name" class="input" placeholder="        Name"><br><br><br>
+<label id="lemail">Email :</label> <br>
+<input type="email" name="email" class="input" placeholder="        Email"><br> <br><br>
+<label id="lmono">Phone Number :</label> <br>
+<input type="text" name="mobile" class="input" placeholder="        Mobile Number"><br> <br><br>
+<label id="message"	>Message:</label><br>
+<textarea name="message" id="sms" placeholder="     Message Here"></textarea><br><br><br><br><br>
+<input type="submit" value="Send" id="submit">
+</form>
+</div>
+</body>
+</html>

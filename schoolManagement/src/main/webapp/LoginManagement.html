@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+}
+
+#body {
+	background-image: url(loginimg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	margin-top: 0px;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+.input {
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid rgb(163, 155, 155);
+	width: 400px;
+	height: 10px;
+}
+
+.input:active {
+	border: 3px solid gray;
+	border-width: 3px;
+}
+
+.img {
+	height: 15px;
+	background-color: white;
+	border-radius:50%;
+	padding:5px;
+}
+
+.log {
+	height: 50px;
+	width: 430px;
+	padding: 12px;
+	border-radius: 25px;
+	border: 1px solid rgb(163, 155, 155);
+	background-color: orange;
+	color: white;
+	font-size: 15px;
+}
+
+.log:active {
+	border: 3px solid gray;
+	border-width: 3px;
+}
+
+#logcontainer {
+	border: 2px solid red;
+	width: 500px;
+	height: 280px;
+	padding-bottom: 200px;
+	padding-left: 25px;
+	box-shadow: 0px 0px 7px 2px;
+	margin-left: 200px;
+	color: white;
+}
+
+#flog {
+	color: white;
+	font-weight: bolder;
+	font-size: 24px;
+	margin-left: 150px;
+	margin-top:0px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+	color: gray;
+	padding: 25px;
+}
+
+#ad {
+	background-color: rgb(220, 226, 226);
+	border-radius: 20px;
+	width: 370px;
+	font-size: 20px;
+	
+}
+</style>
+
+<script type="text/javascript">
+function valid() {
+	var a=document.getElementById('un');
+	var b=document.getElementById('up');
+
+
+	 if (a.value == "") {
+         alert('Enter Username')
+        
+         return false;
+     }
+     if (a.value.length < 4) {
+
+         alert('Enter valid Username');
+
+         a.style.visibility="visible"
+         return false;
+     }
+
+     if (b.value == "") {
+         alert('Enter password');
+
+         a.style.visibility="visible"
+         return false;
+     }
+     if (b.value.length < 2) {
+         alert('Enter valid password');
+
+         a.style.visibility="visible"
+         return false;
+     }
+     
+
+ }
+ 
+
+</script>
+</head>
+<body>
+
+	<div id="body">
+		<div id="logcontainer">
+			<form action="checkRadio" method="post" onsubmit="return valid()">
+				<p id="flog">Login</p>
+
+				<p id="ad">
+					<label>Management</label><input type="radio" value="management"
+						name="role" id="mn">&nbsp;&nbsp;&nbsp;<label>Teacher</label><input
+						type="radio" value="teacher" name="role" id="tch">&nbsp;&nbsp;&nbsp;
+						 <label>Student</label><input
+						type="radio" value="student" name="role" id="st">
+				</p>
+
+				<img src="user.svg" alt="" class="img"> Email  <br> <input
+					type="text" name="name" class="input" placeholder="Username" id="un">
+				<br> <br> <img src="key.svg" alt="" class="img">
+				Password <br> <input type="password" name="pass" class="input"
+					placeholder="Password" id="up"> <br> <br> <br> <input
+					type="submit" value="Login" class="log">
+			</form>
+		</div>
+
+	</div>
+	<!-- 
+	<form action="checkRadio" method="post">
+		<label>Management</label><input type="radio" value="management"
+			name="role"> <label>Teacher</label><input type="radio"
+			value="teacher" name="role"> <label>Student</label><input
+			type="radio" value="student" name="role"> Name: <input
+			type="text" name="name"> Password: <input type="password"
+			name="pass"> <input type="submit" value="Login">
+	</form>
+	-->
+	<!--  -->
+</body>
+</html>

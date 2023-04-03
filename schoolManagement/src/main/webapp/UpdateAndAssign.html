@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ @-ms-viewport {
+            width: device-width;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #bd{
+            background-image: url(loginimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        #su input{
+box-shadow: 0px 0px 2px 3px;
+width: 400px;
+height:40px;
+border-radius: 15px;
+font-family: cursive;
+background-color: transparent;
+color: white;
+}
+#va input{
+box-shadow: 0px 0px 2px 3px;
+width: 400px;
+height:40px;
+border-radius: 15px;
+font-family: cursive;
+background-color: transparent;
+color: white;
+}
+#su input:hover{
+background-color: white;
+color: black;
+}
+#va input:hover{
+background-color: white;
+color: black;
+}
+#vi input:hover{
+background-color: white;
+color: black;
+}
+#vi input{
+width: 400px;
+height:40px;
+border-radius: 15px;
+box-shadow: 0px 0px 2px 3px;
+font-family: cursive;
+background-color: transparent;
+color: white;
+}
+#borde{
+
+padding-top: 200px;
+padding-left:100px;
+width: 600px;
+
+}
+#nav2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          
+        }
+        #nav2 ul {
+         
+        display: flex;
+        list-style: none;
+        margin-left: 80px;
+        position: absolute;
+
+        }
+        
+        #nav2 ul li a{
+        text-decoration: none;
+         padding-right: 60px;
+            color: orange;
+        }
+        #nav2 ul li a:hover {
+        color:red;
+}
+</style>
+</head>
+<body>
+<div id="bd">
+<div id="nav2">
+                <ul>
+                    <li><a href="UpdateAndAssign.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Course.html">Cource</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="LogAndSign.html">Log Out</a></li>
+                </ul>
+            </div>
+<div id="borde">
+<div id="su">
+<form action="Update.jsp">
+<input type="submit" value="Upadate Profile">
+</form>
+</div>
+<br>
+<div id="va">
+<form action="Asignment.html">
+<input type="submit" value="Add Assignment">
+</form>
+</div>
+<br>
+<div id="vi">
+<form action="Addresult.html">
+<input type="submit" value="AddResult">
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
